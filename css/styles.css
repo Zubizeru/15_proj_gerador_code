@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('/img/nature.jpg'); /* Imagem de fundo */
+    background-attachment: fixed; /* Mantém a imagem fixa ao rolar */
+    background-repeat: no-repeat;
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+  }
+  
+  .container {
+    background-color: #1d1024a9;
+    height: 550px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.2s;
+    box-shadow: 0 4px 14px #101221;
+  }
+  
+  .container.active {
+    height: 550px;
+  }
+  
+  #qr-header {
+    text-align: center;
+  }
+  
+  #qr-header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  #qr-header p {
+    color: #ffffff;
+    font-size: 0.9rem;
+  }
+  
+  .container #qr-form {
+    margin: 20px 15px;
+  }
+  
+  #qr-form input,
+  #qr-form button {
+    width: 100%;
+    height: 55px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.9rem;
+  }
+
+  #qr-form input {
+    border: 1px solid #777;
+    padding: 10px 15px;
+  }
+  
+  #qr-form button {
+    background-color: #272347;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 0.4s;
+  }
+
+    #qr-form button:hover {
+    background-color: #100e20;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 0.4s;
+  }
+  
+  #qr-form button:hover {
+    opacity: 1;
+  }
+  
+  .container #qr-code {
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    padding: 30px 0;
+    margin: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container.active #qr-code {
+    opacity: 1;
+    pointer-events: auto;
+    transition: 0.5s;
+  }
+
+  
+  
